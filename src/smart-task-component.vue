@@ -39,14 +39,14 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <form v-if="componentStatus != SmartTaskState.Completed">
+  <form v-if="componentStatus != SmartTaskStatus.Completed">
     <div class="my-5">
       <button type="button" @click="submitForm" class="btn btn-sm btn-primary">
         Mark as Completed
       </button>
     </div>
   </form>
-  <form v-if="componentStatus == SmartTaskState.Completed">
+  <form v-if="componentStatus == SmartTaskStatus.Completed">
     <p>Task has been completed.</p>
     <div class="my-5">
       <button type="button" @click="submitForm" class="btn btn-sm btn-white">
