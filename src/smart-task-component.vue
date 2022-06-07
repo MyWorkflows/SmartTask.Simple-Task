@@ -48,7 +48,7 @@ export default /*#__PURE__*/ defineComponent({
   </form>
   <form v-if="componentStatus == SmartTaskStatus.Completed">
     <div class="my-5">
-      <button type="button" @click="submitForm" class="btn text-primary btn-sm btn-white">
+      <button type="button" @click="submitForm" class="btn border text-primary btn-sm btn-white">
         Mark as In Progress
       </button>
     </div>
